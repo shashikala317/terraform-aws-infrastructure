@@ -1,0 +1,76 @@
+# AWS Infrastructure Provisioning using Terraform
+
+## Project Overview
+This project demonstrates Infrastructure as Code (IaC) using Terraform to provision AWS resources. The infrastructure includes a custom VPC, Security Group, and an EC2 instance deployed automatically using Terraform.
+
+## Architecture
+
+Terraform (HCL)
+        ↓
+AWS VPC
+        ↓
+Security Group
+        ↓
+EC2 Instance
+
+## Technologies Used
+- Terraform
+- AWS EC2
+- AWS VPC
+- Security Groups
+- Git & GitHub
+- VS Code
+
+## Project Files
+
+- `provider.tf` – Configures the AWS provider.
+- `main.tf` – Defines AWS resources.
+- `variables.tf` – Stores input variables.
+- `outputs.tf` – Displays output values.
+- `terraform.tfvars` – Contains variable values.
+
+## Prerequisites
+
+- AWS Account
+- AWS CLI configured
+- Terraform installed
+- VS Code
+
+## Deployment Steps
+
+```bash
+terraform init
+terraform validate
+terraform plan
+terraform apply
+```
+
+To destroy the infrastructure:
+
+```bash
+terraform destroy
+```
+
+## Resources Created
+
+- Custom VPC
+- EC2 Instance
+- Security Group
+- Internet Gateway (if included)
+- Route Table (if included)
+
+## Screenshots
+
+Add screenshots here, for example:
+
+- VS Code project structure
+- Terraform apply output
+- AWS VPC
+- EC2 Instance
+- Security Group
+
+## Author
+
+**Shashi Kala**
+
+GitHub: https://github.com/shashikala317
